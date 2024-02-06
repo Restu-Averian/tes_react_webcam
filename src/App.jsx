@@ -13,16 +13,10 @@ function App() {
               objectFit: "cover",
             }),
             position: "fixed",
-            // inset: 0,
-            top: "50%",
-            left: "50%",
-
-            width: "auto",
-            height: "auto",
-            minHeight: "100%",
-            minWidth: "100%",
-
-            transform: `translate(-50%,-50%) scale(${val})`,
+            inset: 0,
+            width: "100%",
+            height: "100%",
+            transform: `scale(${val})`,
           }}
           videoConstraints={{
             frameRate: 30,
