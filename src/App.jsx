@@ -4,18 +4,19 @@ import Webcam from "react-webcam";
 function App() {
   const [val, setVal] = useState(1);
   const [useObjectFit, setUseObjectFit] = useState(false);
+
   return (
     <>
       <div style={{ position: "relative", marginTop: 100 }}>
         <Webcam
+          height="100%"
+          width="100%"
           style={{
             ...(useObjectFit && {
               objectFit: "cover",
             }),
             position: "fixed",
             inset: 0,
-            width: "100%",
-            height: "100%",
             transform: `scale(${val})`,
           }}
           videoConstraints={{
