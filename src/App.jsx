@@ -10,14 +10,8 @@ function App() {
     <>
       <input
         onKeyDown={(e) => {
-          if (e?.code === "Enter") {
-            setMsg("code === Enter");
-          } else if (e?.key === "Enter") {
+          if (e?.key === "Enter") {
             setMsg("key === Enter");
-          } else if (e?.keyCode === 13) {
-            setMsg("keyCode === 13");
-          } else if (e?.which === 13) {
-            setMsg("which === 13");
           }
         }}
       />
