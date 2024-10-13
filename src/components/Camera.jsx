@@ -5,7 +5,16 @@ const Camera = () => {
   const { isExpand, webcamRef, imageURL, isMirror } = useCameraContext();
 
   if (imageURL) {
-    return <img src={imageURL} width="100%" height="100%" />;
+    return (
+      <div style={{ textAlign: "center" }}>
+        <img
+          src={imageURL}
+          style={{
+            height: "95vh",
+          }}
+        />
+      </div>
+    );
   }
   return (
     <div style={{ position: "relative", marginTop: 100 }}>
