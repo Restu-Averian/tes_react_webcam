@@ -119,7 +119,7 @@ const CameraControl = () => {
         {(!error || !imageURL) && (
           <div
             onClick={isRecording ? stopSpeechToText : startSpeechToText}
-            className="control-icon"
+            className={`${isRecording ? "stop-icon" : ""} control-icon`}
           >
             {isRecording ? <StopIcon /> : <PlayIcon />}
           </div>
