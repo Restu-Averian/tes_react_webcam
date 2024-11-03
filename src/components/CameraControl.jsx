@@ -9,12 +9,13 @@ import {
 import { useCameraContext } from "../context/CameraContextProvider";
 import "../style/control.css";
 import { useEffect, useState } from "react";
-
-const KEYWORDS_SS = ["ss"];
-const KEYWORDS_STOP = ["stop"];
-const KEYWORDS_MIRROR = ["mirror"];
-const KEYWORDS_AGAIN = ["again"];
-const KEYWORDS_EXPAND = ["expand"];
+import {
+  KEYWORDS_AGAIN,
+  KEYWORDS_EXPAND,
+  KEYWORDS_MIRROR,
+  KEYWORDS_SS,
+  KEYWORDS_STOP,
+} from "../constants";
 
 const CameraControl = () => {
   const {

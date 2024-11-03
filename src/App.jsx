@@ -1,6 +1,7 @@
 import Camera from "./components/Camera";
 import CameraContextProvider from "./context/CameraContextProvider";
 import CameraControl from "./components/CameraControl";
+import CameraCommandsInfo from "./components/CameraCommandsInfo";
 
 /**
  * 1. Expand
@@ -13,6 +14,7 @@ function App() {
     <CameraContextProvider>
       <Camera />
       <CameraControl />
+      <CameraCommandsInfo />
     </CameraContextProvider>
   );
 }
