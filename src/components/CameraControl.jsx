@@ -107,7 +107,7 @@ const CameraControl = () => {
           <ExpandIcon />
         </div>
 
-        <div onClick={() => onSetMirror} className="control-icon">
+        <div onClick={onSetMirror} className="control-icon">
           <MirrorIcon />
         </div>
 
