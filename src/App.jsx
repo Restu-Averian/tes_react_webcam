@@ -2,7 +2,6 @@ import Camera from "./components/Camera";
 import CameraContextProvider from "./context/CameraContextProvider";
 import CameraControl from "./components/CameraControl";
 import CameraCommandsInfo from "./components/CameraCommandsInfo";
-import Texteditor from "./Texteditor";
 
 /**
  * 1. Expand
@@ -13,11 +12,9 @@ import Texteditor from "./Texteditor";
 function App() {
   return (
     <CameraContextProvider>
-      {/* <Camera />
+      <Camera />
       <CameraControl />
-      <CameraCommandsInfo /> */}
-
-      <Texteditor />
+      <CameraCommandsInfo />
     </CameraContextProvider>
   );
 }
